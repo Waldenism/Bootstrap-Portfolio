@@ -34,6 +34,11 @@ h1 {
   align-items: center;
 }
 
+a {
+    text-decoration: none;
+    color:           #777777;  
+}
+
 body>.container {
   margin-top: 150px;
 }
@@ -205,6 +210,9 @@ textarea{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 
 .portfolioImage {
@@ -239,12 +247,12 @@ textarea{
 }
 
 #portfoliostuff {
-  /*position:relative;
+  position:relative;
   height: auto;
   width: auto;
   max-width: 100%;
   display: block;
-  margin:0 auto;*/
+  margin:0 auto;
 
 }
 
@@ -260,10 +268,15 @@ textarea{
   font-size: 20px;
   color:white;
   background-color: #4aaaa5;
+  height: auto;
+  /*width: auto;*/
+  max-width: 100%;
+  display: block;
 }
 
 #bigportrow {
-  width:90%;
+  /*width:90%;*/
+  padding:10px;
   margin: 0 auto;
 }
 
@@ -271,33 +284,162 @@ textarea{
 /* Media Queries */
 
 @media screen and (max-width: 980px) {
+  #portfoliostuff {
+    margin: 0 auto;
+    align-items: center;
+  }
 
+  .portfolioRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+  }
+
+  .portfolioImage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    /*width:100%;*/
+    position: relative;
+  }
+  #portfolioImage {
+    display: none;
+  }
+
+  .portHead {
+    position: absolute;
+    top: 140px;
+    /*left: 95px;*/
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    color:white;
+    background-color: #4aaaa5;
+  }
 } /* /980 query */
 
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 768px) {  
 
   body>.container {
     margin-top: 200px;
   }
 
+  .portfolioRow {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .portfolioImage {
+    position: relative;
+  }
+  #portfolioImage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width:100%;
+    position: relative;  }
+
+  .portHead {
+    position: absolute;
+    top: 140px;
+    left: 21px;
+    width:100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    color:white;
+    background-color: #4aaaa5;
+  }
+
 } /* close Media Query 768 */
+
+@media screen and (max-width: 777px) {
+  .portHead {
+    left:initial;
+  }
+}
 
 @media screen and (max-width: 640px) {
   h1 {
     font-size: 30px;
   }
-} /*close media query 640 */
 
-/*@media (min-width: 992px) {
-    
-  .col-md-4 #picypic  {
-    width: 33.33333333%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  img {
+
   }
-}*/
 
+  #portfoliostuff {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .portfolioRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:0 auto;
+    align-items: center;
+  }
+
+  .portfolioImage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:276px;
+    margin:0 auto;
+  }
+  #portfolioImage {
+    display: none;
+  }
+
+  .portHead {
+    display:initial;
+    float:center;
+    margin:0 auto;
+    padding: initial;
+    position: absolute;
+    top: 140px;
+    left: initial;
+    width: 276px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    color:white;
+    background-color: #4aaaa5;
+    z-index: 1;
+  }
+
+  /*.portfolioImage {
+    width:90%;
+  }
+
+  .portfolioImage img{
+    width:90%;
+  }
+
+  #portfolioImage {
+    width:90%;
+  }
+  #portfolioImage img {
+    width:90%;
+
+  }*/
+
+} /*close media query 640 */
 
 
 
