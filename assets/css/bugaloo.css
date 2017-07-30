@@ -459,6 +459,23 @@ textarea{
     /*z-index: 1;*/
   }
 
+  .portfolioImage img{
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+  }
+  #portfolioImage img {
+  position:relative;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+
+
 } /*close media query 640 */
 
 
