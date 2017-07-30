@@ -435,39 +435,29 @@ textarea{
   }
 
   .portHead {
-    display:initial;
-    float:center;
-    margin:0 auto;
-    padding: initial;
     position: absolute;
     top: 140px;
     left: initial;
     width: 276px;
+
+
+    display:initial;
+    float:center;
+    margin:0 auto;
+    padding: initial;
+
+
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 20px;
     color:white;
     background-color: #4aaaa5;
-    z-index: 1;
-  }
 
-  /*.portfolioImage {
-    width:90%;
+    /*z-index: 1;*/
   }
-
-  .portfolioImage img{
-    width:90%;
-  }
-
-  #portfolioImage {
-    width:90%;
-  }
-  #portfolioImage img {
-    width:90%;
-
-  }*/
 
 } /*close media query 640 */
 
