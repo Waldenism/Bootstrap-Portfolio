@@ -228,23 +228,23 @@ textarea{
   max-width: 100%;
   height: auto;
   width: auto;
-  display: block;
+  /*display: block;*/
 }
-
+/*
 #portfolioImage {
   position:relative;
   height: auto;
   width: auto;
   max-width: 100%;
   display: block;
-}
-#portfolioImage img {
+}*/
+/*#portfolioImage img {
   position:relative;
   height: auto;
   width: auto;
   max-width: 100%;
   display: block;
-}
+}*/
 
 #portfoliostuff {
   position:relative;
@@ -271,7 +271,7 @@ textarea{
   height: auto;
   /*width: auto;*/
   max-width: 100%;
-  display: block;
+  /*display: block;*/
 }
 
 #bigportrow {
@@ -313,7 +313,7 @@ textarea{
   display: block;
 }
 
-#portfolioImage {
+/*#portfolioImage {
   position:relative;
   height: auto;
   width: auto;
@@ -326,7 +326,7 @@ textarea{
   width: auto;
   max-width: 100%;
   display: block;
-}
+}*/
 
 #portfoliostuff {
   position:relative;
@@ -370,13 +370,13 @@ textarea{
   .portfolioImage {
     position: relative;
   }
-  #portfolioImage {
+  /*#portfolioImage {
     display:flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     width:100%;
-    position: relative;  }
+    position: relative;  }*/
 
   .portHead {
     position: absolute;
@@ -459,20 +459,7 @@ textarea{
     /*z-index: 1;*/
   }
 
-  .portfolioImage img{
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  display: block;
-  }
-  #portfolioImage img {
-  position:relative;
-  height: auto;
-  width: auto;
-  max-width: 100%;
-  display: block;
-}
+ 
 
 
 
